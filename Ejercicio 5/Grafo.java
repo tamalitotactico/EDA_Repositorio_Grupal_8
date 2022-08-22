@@ -78,9 +78,11 @@ public class Grafo <V extends Comparable<V>>  {
     	
 		int matches = 0;
 
-		//Se empieza en el primer vector, de este se comparan los valores 
+		//Se empieza en el primer vector, de este se comparan las referencias de este con todos los vectores 
+		//del grafo mas grande, si luego de revisar todos los vectores del grafo grande no hay ningun match
+		//se retornara false, si en cambio hay un match se pasara al siguiente vector del grafo mas pequeño
+		//Si todos los vectores del grafo pequeño tienen match se retorn True.
     	for(int i=0;i<listamenor.size();i++) {
-    		System.out.println("Viendo la linea "+i);
     		for(int j=0;j<listamayor.size();j++) {
     			matches = 0;
         		for(int k=0;k<listamayor.get(j).punteros.size();k++) {
