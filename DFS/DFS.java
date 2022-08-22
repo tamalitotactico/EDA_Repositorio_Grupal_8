@@ -63,6 +63,6 @@ public class DFS {
             actualNodoDFS = actualNodoDFS.getParent();
         }
         Collections.reverse(estados);
-        System.out.println("Solution in: " + estados.size() + " levels [" + String.join(",", estados) + "] time: " + tiempo + "ms");
+        System.out.println("Solucion en: " + estados.size() + " niveles [" + String.join(",", estados) + "] tiempo: " + tiempo + "ms");
     }
 }
