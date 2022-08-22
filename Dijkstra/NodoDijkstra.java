@@ -21,6 +21,6 @@ public class NodoDijkstra {
         this.adyacente = adyacente;
     }
     public String toString() {
-        return "NodeDijkstra{" +"name='" + nombre + '\'' + '}';
+        return "NodoDijkstra{" +"nombre='" + nombre + '\'' + '}';
     }
 }
