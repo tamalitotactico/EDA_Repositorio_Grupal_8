@@ -1,4 +1,4 @@
-package Ejercicio1;
+package Ejercicio2;
 
 import java.util.ArrayList;
 public class Vertice <V extends Comparable<V>>{
