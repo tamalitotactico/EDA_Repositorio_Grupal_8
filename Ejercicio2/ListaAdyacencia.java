@@ -4,19 +4,19 @@ import java.util.ArrayList;
 
 public class ListaAdyacencia <V extends Comparable<V>>  {
 
-    protected ArrayList <ArrayList <Vertice <V>> > list = new ArrayList<ArrayList <Vertice<V>> >();
+    protected ArrayList <Vertice <V>> list = new ArrayList <Vertice<V>>();
     
     public ListaAdyacencia(){
     }
 
-    public ListaAdyacencia(ArrayList < ArrayList <Vertice <V>> > lista){
+    public ListaAdyacencia( ArrayList <Vertice <V>> lista){
         this.list = lista;
     }
 
     public void add(Vertice <V> vertice){
-        ArrayList <Vertice<V>> arrayReferencias = new ArrayList<>();
-        arrayReferencias.add(vertice);
-        this.list.add(arrayReferencias);
+        //ArrayList <Vertice<V>> arrayReferencias = new ArrayList<>();
+        //arrayReferencias.add(vertice);
+        this.list.add(vertice);
 
         //Revisar quein es su vertice adyacente para enlazarlos entre los os si es que no lo estan
         enlazarVAdyacente(vertice);
@@ -51,9 +51,7 @@ public class ListaAdyacencia <V extends Comparable<V>>  {
     public String toString(){
         String str = "";
         for(int i = 0 ; i < this.list.size(); i++){
-            for(int j = 0 ; j < this.list.get(i).size() ; j++){
-                str += list.get(i);
-            }
+                str += list.get(i) + " ----> " + list.get(i).punteros;
             str += "\n";
         }
 

@@ -15,7 +15,7 @@ public class Ejercicio1{
         Vertice [] referenciasV3 = {v1, v2};
         Vertice <String> v3 = new Vertice<String>("c" , referenciasV3);
 
-        Vertice [] referenciasV4 = {v1, v2 , v3};
+        Vertice [] referenciasV4 = {v1, v2};
         Vertice <String> v4 = new Vertice<String>("d" , referenciasV4);
 
         myList.add(v1);
@@ -26,6 +26,6 @@ public class Ejercicio1{
         System.out.println(myList);
         
         //Comprobamos las referencias
-        System.out.println(v1.punteros);
+        //System.out.println(v1.punteros);
     }
 }
