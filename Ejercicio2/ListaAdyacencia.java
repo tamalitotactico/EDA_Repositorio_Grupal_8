@@ -41,6 +41,7 @@ public class ListaAdyacencia <V extends Comparable<V>>  {
         for(int i = 0 ; i < verticeComprobar.punteros.size() ;i++){
             if(verticeComprobar.punteros.get(i) == verticeIns){
                 System.out.println("Ya esta referenciado");
+                return true;
             }
         }
 
