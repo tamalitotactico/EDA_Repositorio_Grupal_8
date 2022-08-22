@@ -22,7 +22,7 @@ public class Tag {
         return nodo;
     }
     public String toString() {
-        String n = nonNull(nodo) ? ", node=" + nodo.getName()  : ", node=";
-        return "Tag{ weight=" + weight + ", node=" + n + "}";
+        String n = nonNull(nodo) ? ", nodo=" + nodo.getName()  : ", nodo=";
+        return "Tag{ peso=" + weight + ", nodo=" + n + "}";
     }
 }

@@ -43,7 +43,6 @@ public class BFS {
         }
         return foundNode;
     }
-
     private void processChild(final int[] state, final NodoBFS nodeDFS) {
         final NodoBFS nodeDFSChild = NodoBFS.of(state);
         nodeDFSChild.setParent(nodeDFS);
@@ -63,6 +62,6 @@ public class BFS {
             actualNodeDFS = actualNodeDFS.getParent();
         }
         Collections.reverse(estados);
-        System.out.println("Solution in: " + estados.size() + " levels [" + String.join(",", estados) + "] time: " + timeElapsed + "ms");
+        System.out.println("Solucion en: " + estados.size() + " niveles [" + String.join(",", estados) + "] tiempo: " + timeElapsed + "ms");
     }
 }
