@@ -43,7 +43,6 @@ public class BFS {
         }
         return foundNode;
     }
-
     private void processChild(final int[] state, final NodoBFS nodeDFS) {
         final NodoBFS nodeDFSChild = NodoBFS.of(state);
         nodeDFSChild.setParent(nodeDFS);
